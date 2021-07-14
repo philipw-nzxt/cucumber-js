@@ -1,6 +1,6 @@
 {
-  "name": "cucumber",
-  "description": "The official JavaScript implementation of Cucumber.",
+  "name": "cucumber-nzxt",
+  "description": "The unofficial JavaScript implementation of Cucumber.",
   "keywords": [
     "testing",
     "bdd",
@@ -8,7 +8,7 @@
     "gherkin",
     "tests"
   ],
-  "version": "6.0.5",
+  "version": "6.0.6",
   "homepage": "http://github.com/cucumber/cucumber-js",
   "author": "Julien Biezemans <jb@jbpros.com> (http://jbpros.net)",
   "contributors": [
@@ -141,7 +141,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/cucumber/cucumber-js.git"
+    "url": "git://github.com/philipw-nzxt/cucumber-js.git"
   },
   "bugs": {
     "email": "cukes@googlegroups.com",
@@ -232,7 +232,7 @@
     "lint-dependencies": "dependency-lint",
     "lint": "yarn run lint-code && yarn run lint-dependencies",
     "prefeature-test": "yarn run build-local",
-    "prepublishOnly": "rm -r lib && yarn run build-local",
+    "prepublishOnly": "npm run build-local",
     "test-coverage": "yarn run lint && ./scripts/test-coverage.sh",
     "test": "yarn run lint && yarn run unit-test && yarn run feature-test",
     "unit-test": "mocha src"
